@@ -64,6 +64,22 @@ nav {
   width: 175px;
   align-self: center;
 }
+.social-media {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+
+  align-items: center;
+  justify-content: center;
+}
+.social-media a {
+  font-size: 2rem;
+  color: black;
+  transition: color 0.3s;
+}
+.social-media a:hover {
+  color: gray;
+}
 
 /* LAST PROJECTS */
 .last-projects {
