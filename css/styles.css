@@ -11,139 +11,121 @@
 
 /* HEADER */
 header {
-  background-color: lightgray;
-  padding: 1rem 4rem;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: url(/assets/images/Technologies\ futuristes\ en\ néon\ bleu\ et\ or.png)
+    no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
 }
+
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 15px;
-  width: 80%;
-  margin: auto;
-}
-.nav-links {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 70%;
+  margin: 0 auto;
 }
-.icon-menu {
+
+.nav-logo {
+  height: 100px;
+  border-radius: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  background-color: gray;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.nav-icon {
   display: none;
 }
 
-/*HERO */
+.nav-toggle {
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.nav-toggle i {
+  color: white;
+}
+
+/* HEADER HERO SECTION */
 .hero {
   display: flex;
+  color: white;
+  padding: 2rem;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  width: 60%;
-  margin: 50px auto;
+  height: 100dvh;
+  margin: 0 auto;
 }
-.hero-image {
+
+.hero-text {
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.hero h1 span {
+  color: #00ffff;
+}
+.hero h2 {
+  font-size: 1.5rem;
+  color: rgb(133, 226, 198);
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: rgb(200, 200, 200);
+}
+
+.hero-photo {
   width: 20%;
   height: auto;
   border-radius: 20px;
+  margin-top: 2rem;
 }
-.hero-text {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.btn-hero {
-  padding: 1rem;
-  background-color: lightgray;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 175px;
-  align-self: center;
-}
-.social-media {
-  display: flex;
-  gap: 2rem;
-  margin: 1rem 0;
 
-  align-items: center;
-  justify-content: center;
-}
-.social-media a {
+.skills {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
   font-size: 2rem;
-  color: black;
-  transition: color 0.3s;
-}
-.social-media a:hover {
-  color: gray;
 }
 
-/* LAST PROJECTS */
-.last-projects {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 50px auto;
-}
-.last-projects h2 {
-  margin: 1rem 0;
-}
-.project {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 30%;
-}
-.project img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-.project-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.skills i {
+  color: #00ffff;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 992px) {
-  header {
-    padding: 1rem 1.5rem;
-    width: 100%;
-  }
+/* MEDIAQUERIES */
+@media (max-width: 768px) {
   nav {
     width: 100%;
   }
-  .nav-links {
-    width: 55%;
+  .nav-logo {
+    height: 50px;
+    border-radius: 10px;
+  }
+  .nav-menu {
+    padding: 1rem;
   }
   .nav-text {
     display: none;
   }
-  .fas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-  .hero {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-  }
-  .hero-image {
-    width: 50%;
-    height: auto;
-  }
-  .hero-text {
-    width: 90%;
-    gap: 1.5rem;
-  }
-  .btn-hero {
-    margin: 20px auto;
+  .nav-icon {
+    display: inline-block;
   }
 }
 
