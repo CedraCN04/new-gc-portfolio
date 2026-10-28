@@ -61,15 +61,15 @@ nav {
   padding: 2rem;
   justify-content: space-around;
   align-items: center;
-  height: 100dvh;
   margin: 0 auto;
 }
 
 .hero-text {
   align-self: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 2rem;
   border-radius: 20px;
+  width: 60%;
 }
 
 .hero h1 {
@@ -95,7 +95,7 @@ nav {
   width: 20%;
   height: auto;
   border-radius: 20px;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .skills {
@@ -110,12 +110,15 @@ nav {
 }
 
 /* MEDIAQUERIES */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  header {
+    padding: 2rem 0;
+  }
   nav {
-    width: 100%;
+    width: 80%;
   }
   .nav-logo {
-    height: 50px;
+    height: 100px;
     border-radius: 10px;
   }
   .nav-menu {
@@ -126,6 +129,21 @@ nav {
   }
   .nav-icon {
     display: inline-block;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    height: auto;
+  }
+  .hero-photo {
+    width: clamp(300px, 90%, 30%);
+    margin-top: 1rem;
+  }
+  .hero-text {
+    padding: 1rem;
+    width: 90%;
   }
 }
 
